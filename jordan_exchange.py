@@ -6,7 +6,6 @@ def jordan_exchange(A:np.array,pivot:tuple):
 
     pivot_col = (A[:,y] / A[x,y]).reshape(-1,1)
 
-
     B = A[:,:] - pivot_col @ A[x,:].reshape(1,-1)
 
     B[:,y] = pivot_col.reshape(-1)
