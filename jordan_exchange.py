@@ -21,3 +21,8 @@ if __name__ == '__main__':
     A = np.array([[-2,3,6],[-4,-5,20]],dtype=np.float)
     print(A)
     print(jordan_exchange(A,(0,0)))
+
+    A = np.array([[0,-1,5],[-1,-1,9],[-1,2,0],[1,-1,3],[1,2,0]],dtype=np.float)
+    print(A)
+    B = jordan_exchange(A,(3,1))
+    print(jordan_exchange(B,(1,0)))
